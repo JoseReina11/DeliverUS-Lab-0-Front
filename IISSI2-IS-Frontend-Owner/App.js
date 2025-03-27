@@ -4,6 +4,9 @@ import * as React from 'react'
 import ControlPanelScreen from '/src/screens/controlPanel/ControlPanelScreen'
 import ProfileScreen from '/src/screens/profile/ProfileScreen'
 import RestaurantsScreen from '/src/screens/restaurants/RestaurantsScreen'
+import RestaurantsStack from './src/screens/restaurants/RestaurantsStack'
+//HE QUITADO LOS PUNTOS EN ALGUNAS RUTAS PORQUE ME SALTABA ERROR 
+
 
 const Tab = createBottomTabNavigator()
 
@@ -20,6 +23,9 @@ export default function App () {
         <Tab.Screen
           name="Profile"
           component={ProfileScreen} />
+        <Tab.Screen
+          name="Restaurants"
+          component={RestaurantsStack} />
       </Tab.Navigator>
     </NavigationContainer>
   )
